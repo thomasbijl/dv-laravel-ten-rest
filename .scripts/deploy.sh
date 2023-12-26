@@ -18,7 +18,6 @@ composer install --optimize-autoloader --no-dev --no-interaction
 
 # Change file permissoion
 
-chmod 755 .scripts/deploy.sh
 # Clearing Cache
 php artisan cache:clear
 php artisan config:clear
