@@ -7,8 +7,9 @@ echo "Deployment started ..."
 # if already is in maintenance mode
 (php artisan down) || true
 
+
 # Pull the latest version of the app
-git pull origin master
+git pull origin master 
 
 # Install composer dependencies
 composer install --optimize-autoloader --no-dev --no-interaction
@@ -24,6 +25,6 @@ php artisan optimize
 php artisan migrate --force
 
 # Turn OFF Maintenance mode
-php artisan up
+php artisan up --host=5.254.124.209 --port=8000
 
 echo "Deployment finished!"
