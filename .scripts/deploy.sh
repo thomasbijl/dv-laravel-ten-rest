@@ -11,6 +11,8 @@ echo "Deployment started ..."
 # Pull the latest version of the app
 git pull origin master 
 
+
+
 # Install composer dependencies
 composer install --optimize-autoloader --no-dev --no-interaction
 
