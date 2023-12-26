@@ -22,4 +22,4 @@ jobs:
           username: ${{ secrets.USERNAME }}
           port: ${{ secrets.PORT }}
           key: ${{ secrets.SSHKEY }}
-          script: "cd /var/www/dv-laravel-ten-rest/laravel-10-sanctum-api && ./.scripts/deploy-gh.sh"
+          script: "cd /var/www/dv-laravel-ten-rest/laravel-10-sanctum-api && /var/www/dv-laravel-ten-rest/.scripts/deploy-gh.sh"
