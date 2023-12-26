@@ -17,6 +17,7 @@ class ProductController extends Controller
     {
         $products = Product::latest()->get();
 
+        // Get existing products
         if (is_null($products->first())) {
             return response()->json([
                 'status' => 'failed',
