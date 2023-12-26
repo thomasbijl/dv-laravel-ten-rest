@@ -20,7 +20,7 @@ composer install --optimize-autoloader --no-dev --no-interaction
 php artisan cache:clear
 php artisan config:clear
 
-# Recreate cache
+# Recreate artisan cache
 php artisan optimize
 
 # Run database migrations
