@@ -25,6 +25,6 @@ php artisan optimize
 php artisan migrate --force
 
 # Turn OFF Maintenance mode
-php artisan up --host=5.254.124.209 --port=8000
+php artisan up
 
 echo "Deployment finished!"
